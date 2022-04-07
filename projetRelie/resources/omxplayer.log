@@ -1,0 +1,579 @@
+﻿08:21:39 T:1798282552   DEBUG: DllBcm: Using omx system library
+08:21:39 T:1798283924   DEBUG: DllOMX: Using omx system library
+08:21:39 T:1798284692   DEBUG: DllAvFormat: Using libavformat system library
+08:21:39 T:1798286352   DEBUG: DBus connection succeeded
+08:21:39 T:1798287637   DEBUG: Keyboard: DBus connection succeeded
+08:21:39 T:1798287916   DEBUG: OMXThread::Create - Thread with id -1388339520 started
+08:21:39 T:1798288055   DEBUG: DllAvUtilBase: Using libavutil system library
+08:21:39 T:1798288092   DEBUG: DllAvCodec: Using libavcodec system library
+08:21:39 T:1798288112   DEBUG: DllAvFormat: Using libavformat system library
+08:21:39 T:1798299829 WARNING: main - Ignoring video in audio filetype:coucou.mp3
+08:21:39 T:1798307074   DEBUG: COMXCoreComponent::Initialize OMX.broadcom.clock input port 80 output port 81 m_handle 0x16c27a0
+08:21:39 T:1798307359   DEBUG: OMXClock::OMXStop
+08:21:39 T:1798307473   DEBUG: OMXClock::OMXSetSpeed(0.00) pause_resume:1
+08:21:39 T:1798307751   DEBUG: DllAvUtilBase: Using libavutil system library
+08:21:39 T:1798307777   DEBUG: DllAvCodec: Using libavcodec system library
+08:21:39 T:1798307797   DEBUG: DllAvFormat: Using libavformat system library
+08:21:39 T:1798307822   DEBUG: DllAvUtilBase: Using libavutil system library
+08:21:39 T:1798307843   DEBUG: DllAvCodec: Using libavcodec system library
+08:21:39 T:1798307863   DEBUG: DllAvFormat: Using libswresample system library
+08:21:39 T:1798308181    INFO: COMXAudioCodecOMX::GetChannelMap - FFmpeg reported 2 channels, but the layout contains 0 ignoring
+08:21:39 T:1798308240   DEBUG: DllAvUtilBase: Using libavutil system library
+08:21:39 T:1798308280   DEBUG: COMXAudio::SetCodingType OMX_AUDIO_CodingPCM
+08:21:39 T:1798308321    INFO: CPCMRemap: I channel map: FL,FR
+08:21:39 T:1798308356    INFO: CPCMRemap: O channel map: FL,FR
+08:21:39 T:1798308377   DEBUG: CPCMRemap: Downmix normalization is disabled
+08:21:39 T:1798308446   DEBUG: CPCMRemap: FL = FL(1.000000*)
+08:21:39 T:1798308474   DEBUG: CPCMRemap: FR = FR(1.000000*)
+08:21:39 T:1798309898   DEBUG: COMXCoreComponent::Initialize OMX.broadcom.audio_decode input port 120 output port 121 m_handle 0x16c26b0
+08:21:39 T:1798311094   DEBUG: COMXCoreComponent::AllocInputBuffers component(OMX.broadcom.audio_decode) - port(120), nBufferCountMin(4), nBufferCountActual(16), nBufferSize(65536), nBufferAlignmen(16)
+08:21:39 T:1798327676   DEBUG: COMXAudio::Initialize Input bps 32 samplerate 44100 channels 2 buffer size 529200 bytes per second 352800
+08:21:39 T:1798327753   DEBUG: pcm->direction      : input
+08:21:39 T:1798327774   DEBUG: pcm->nPortIndex     : 120
+08:21:39 T:1798327793   DEBUG: pcm->eNumData       : 0
+08:21:39 T:1798327813   DEBUG: pcm->eEndian        : 1
+08:21:39 T:1798327833   DEBUG: pcm->bInterleaved   : 1
+08:21:39 T:1798327853   DEBUG: pcm->nBitPerSample  : 32
+08:21:39 T:1798327872   DEBUG: pcm->ePCMMode       : 0
+08:21:39 T:1798327891   DEBUG: pcm->nChannels      : 2
+08:21:39 T:1798327910   DEBUG: pcm->nSamplingRate  : 44100
+08:21:39 T:1798327930   DEBUG: OMX_AUDIO_ChannelLF
+08:21:39 T:1798327949   DEBUG: OMX_AUDIO_ChannelRF
+08:21:39 T:1798327969   DEBUG: COMXAudio::Initialize device omx:hdmi passthrough 0 hwdecode 0
+08:21:39 T:1798328167   DEBUG: OMXThread::Create - Thread with id -1400901952 started
+08:21:39 T:1798328230  NOTICE: OMXClock using audio as reference
+08:21:39 T:1798328493   DEBUG: OMXClock::OMXReset audio / video : 1 / 0 wait mask 0->1 state : 2->1
+08:21:39 T:1798328914   DEBUG: Popped message member: NameAcquired interface: org.freedesktop.DBus type: 4 path: /org/freedesktop/DBus
+08:21:39 T:1798328956 WARNING: Unhandled dbus message, member: NameAcquired interface: org.freedesktop.DBus type: 4 path: /org/freedesktop/DBus
+08:21:39 T:1798329166   DEBUG: Normal M:0 (A:-4503599627370496 V:0) P:1 A:0.00 V:0.00/T:0.20 (0,0,0,1) A:0% V:0% (0.00,6.34)
+08:21:39 T:1798329261    INFO: CDVDPlayerAudio::Decode dts:0 pts:0 size:627
+08:21:39 T:1798329587   DEBUG: COMXAudioCodecOMX::Decode(0x16e4598,627) format=8(8) chan=2 samples=1152 size=4608 data=0xac900e60,0xac902090,(nil),(nil),(nil),(nil),(nil),(nil)
+08:21:39 T:1798329701   DEBUG: COMXAudioCodecOMX::GetData size=9216/9216 line=4608/4608 buf=0xac9045f8, desired=65536
+08:21:39 T:1798329740    INFO: CDVDPlayerAudio::Decode dts:26122 pts:26122 size:627
+08:21:39 T:1798329966    INFO: CDVDPlayerAudio::Decode dts:52245 pts:52245 size:627
+08:21:39 T:1798330170    INFO: CDVDPlayerAudio::Decode dts:78367 pts:78367 size:627
+08:21:39 T:1798330358    INFO: CDVDPlayerAudio::Decode dts:104490 pts:104490 size:627
+08:21:39 T:1798330563    INFO: CDVDPlayerAudio::Decode dts:130612 pts:130612 size:627
+08:21:39 T:1798330775    INFO: CDVDPlayerAudio::Decode dts:156735 pts:156735 size:627
+08:21:39 T:1798330962    INFO: CDVDPlayerAudio::Decode dts:182857 pts:182857 size:627
+08:21:39 T:1798331322   DEBUG: COMXAudio::Decode ADec : setStartTime 0.000000
+08:21:39 T:1798333314   DEBUG: COMXCoreComponent::Initialize OMX.broadcom.audio_mixer input port 232 output port 231 m_handle 0xac9005b8
+08:21:39 T:1798334437   DEBUG: COMXCoreComponent::Initialize OMX.broadcom.audio_render input port 100 output port 100 m_handle 0xac903440
+08:21:39 T:1798334558    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798334746   DEBUG: COMXAudio::PortSettingsChanged - Output bps 16 samplerate 44100 channels 2 buffer size 529200 bytes per second 176400
+08:21:39 T:1798334774   DEBUG: pcm->direction      : output
+08:21:39 T:1798334795   DEBUG: pcm->nPortIndex     : 231
+08:21:39 T:1798334814   DEBUG: pcm->eNumData       : 0
+08:21:39 T:1798334834   DEBUG: pcm->eEndian        : 1
+08:21:39 T:1798334853   DEBUG: pcm->bInterleaved   : 1
+08:21:39 T:1798334873   DEBUG: pcm->nBitPerSample  : 16
+08:21:39 T:1798334892   DEBUG: pcm->ePCMMode       : 0
+08:21:39 T:1798334911   DEBUG: pcm->nChannels      : 2
+08:21:39 T:1798334931   DEBUG: pcm->nSamplingRate  : 44100
+08:21:39 T:1798334951   DEBUG: OMX_AUDIO_ChannelLF
+08:21:39 T:1798334970   DEBUG: OMX_AUDIO_ChannelRF
+08:21:39 T:1798335999   DEBUG: COMXAudio::PortSettingsChanged - bits:32 mode:0 channels:2 srate:44100 nopassthrough
+08:21:39 T:1798348904   DEBUG: Popped message member: NameAcquired interface: org.freedesktop.DBus type: 4 path: /org/freedesktop/DBus
+08:21:39 T:1798348982 WARNING: Unhandled dbus message, member: NameAcquired interface: org.freedesktop.DBus type: 4 path: /org/freedesktop/DBus
+08:21:39 T:1798368936    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798368998    INFO: CDVDPlayerAudio::Decode dts:208980 pts:208980 size:627
+08:21:39 T:1798369184   DEBUG: Normal M:0 (A:182857 V:0) P:1 A:0.18 V:0.00/T:0.20 (0,0,0,1) A:19% V:0% (0.00,6.34)
+08:21:39 T:1798369251    INFO: CDVDPlayerAudio::Decode dts:235102 pts:235102 size:627
+08:21:39 T:1798369424    INFO: CDVDPlayerAudio::Decode dts:261224 pts:261224 size:627
+08:21:39 T:1798369555   DEBUG: Normal M:0 (A:235102 V:0) P:1 A:0.24 V:0.00/T:0.20 (0,0,1,1) A:19% V:0% (0.00,6.34)
+08:21:39 T:1798369613   DEBUG: Resume 0.24,0.00 (0,0,1,1) EOF:0 PKT:(nil)
+08:21:39 T:1798369642   DEBUG: OMXClock::OMXSetSpeed(1.00) pause_resume:1
+08:21:39 T:1798369676    INFO: CDVDPlayerAudio::Decode dts:287347 pts:287347 size:627
+08:21:39 T:1798369840    INFO: CDVDPlayerAudio::Decode dts:313469 pts:313469 size:627
+08:21:39 T:1798370003    INFO: CDVDPlayerAudio::Decode dts:339592 pts:339592 size:627
+08:21:39 T:1798370163    INFO: CDVDPlayerAudio::Decode dts:365714 pts:365714 size:627
+08:21:39 T:1798380601    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798380758    INFO: CDVDPlayerAudio::Decode dts:391837 pts:391837 size:626
+08:21:39 T:1798381052    INFO: CDVDPlayerAudio::Decode dts:417959 pts:417959 size:627
+08:21:39 T:1798381222    INFO: CDVDPlayerAudio::Decode dts:444082 pts:444082 size:627
+08:21:39 T:1798381380    INFO: CDVDPlayerAudio::Decode dts:470204 pts:470204 size:627
+08:21:39 T:1798381540    INFO: CDVDPlayerAudio::Decode dts:496327 pts:496327 size:627
+08:21:39 T:1798381724    INFO: CDVDPlayerAudio::Decode dts:522449 pts:522449 size:627
+08:21:39 T:1798381893    INFO: CDVDPlayerAudio::Decode dts:548571 pts:548571 size:627
+08:21:39 T:1798384091    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798384417    INFO: CDVDPlayerAudio::Decode dts:574694 pts:574694 size:627
+08:21:39 T:1798384907    INFO: CDVDPlayerAudio::Decode dts:600816 pts:600816 size:627
+08:21:39 T:1798385257    INFO: CDVDPlayerAudio::Decode dts:626939 pts:626939 size:627
+08:21:39 T:1798385476    INFO: CDVDPlayerAudio::Decode dts:653061 pts:653061 size:627
+08:21:39 T:1798385666    INFO: CDVDPlayerAudio::Decode dts:679184 pts:679184 size:627
+08:21:39 T:1798385855    INFO: CDVDPlayerAudio::Decode dts:705306 pts:705306 size:627
+08:21:39 T:1798386043    INFO: CDVDPlayerAudio::Decode dts:731429 pts:731429 size:627
+08:21:39 T:1798388194    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798388287    INFO: CDVDPlayerAudio::Decode dts:757551 pts:757551 size:627
+08:21:39 T:1798388517    INFO: CDVDPlayerAudio::Decode dts:783673 pts:783673 size:627
+08:21:39 T:1798388715    INFO: CDVDPlayerAudio::Decode dts:809796 pts:809796 size:626
+08:21:39 T:1798388917    INFO: CDVDPlayerAudio::Decode dts:835918 pts:835918 size:627
+08:21:39 T:1798389076    INFO: CDVDPlayerAudio::Decode dts:862041 pts:862041 size:627
+08:21:39 T:1798389265    INFO: CDVDPlayerAudio::Decode dts:888163 pts:888163 size:627
+08:21:39 T:1798389430    INFO: CDVDPlayerAudio::Decode dts:914286 pts:914286 size:627
+08:21:39 T:1798390692    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798390736    INFO: CDVDPlayerAudio::Decode dts:940408 pts:940408 size:627
+08:21:39 T:1798390899    INFO: CDVDPlayerAudio::Decode dts:966531 pts:966531 size:627
+08:21:39 T:1798391054    INFO: CDVDPlayerAudio::Decode dts:992653 pts:992653 size:627
+08:21:39 T:1798391221    INFO: CDVDPlayerAudio::Decode dts:1018776 pts:1018776 size:627
+08:21:39 T:1798391380    INFO: CDVDPlayerAudio::Decode dts:1044898 pts:1044898 size:627
+08:21:39 T:1798391533    INFO: CDVDPlayerAudio::Decode dts:1071020 pts:1071020 size:627
+08:21:39 T:1798391688    INFO: CDVDPlayerAudio::Decode dts:1097143 pts:1097143 size:627
+08:21:39 T:1798392829    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798392865    INFO: CDVDPlayerAudio::Decode dts:1123265 pts:1123265 size:627
+08:21:39 T:1798393032    INFO: CDVDPlayerAudio::Decode dts:1149388 pts:1149388 size:627
+08:21:39 T:1798393186    INFO: CDVDPlayerAudio::Decode dts:1175510 pts:1175510 size:627
+08:21:39 T:1798393338    INFO: CDVDPlayerAudio::Decode dts:1201633 pts:1201633 size:627
+08:21:39 T:1798393492    INFO: CDVDPlayerAudio::Decode dts:1227755 pts:1227755 size:627
+08:21:39 T:1798393652    INFO: CDVDPlayerAudio::Decode dts:1253878 pts:1253878 size:626
+08:21:39 T:1798393819    INFO: CDVDPlayerAudio::Decode dts:1280000 pts:1280000 size:627
+08:21:39 T:1798395286    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798395397    INFO: CDVDPlayerAudio::Decode dts:1306122 pts:1306122 size:627
+08:21:39 T:1798395440   DEBUG: Normal M:-176526 (A:1280000 V:0) P:0 A:1.46 V:0.18/T:0.20 (0,0,1,1) A:23% V:0% (1.30,6.34)
+08:21:39 T:1798395660    INFO: CDVDPlayerAudio::Decode dts:1332245 pts:1332245 size:627
+08:21:39 T:1798395878    INFO: CDVDPlayerAudio::Decode dts:1358367 pts:1358367 size:627
+08:21:39 T:1798396047    INFO: CDVDPlayerAudio::Decode dts:1384490 pts:1384490 size:627
+08:21:39 T:1798396224    INFO: CDVDPlayerAudio::Decode dts:1410612 pts:1410612 size:627
+08:21:39 T:1798396387    INFO: CDVDPlayerAudio::Decode dts:1436735 pts:1436735 size:627
+08:21:39 T:1798396544    INFO: CDVDPlayerAudio::Decode dts:1462857 pts:1462857 size:627
+08:21:39 T:1798398495    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798398549    INFO: CDVDPlayerAudio::Decode dts:1488980 pts:1488980 size:627
+08:21:39 T:1798398737    INFO: CDVDPlayerAudio::Decode dts:1515102 pts:1515102 size:627
+08:21:39 T:1798398900    INFO: CDVDPlayerAudio::Decode dts:1541224 pts:1541224 size:627
+08:21:39 T:1798399059    INFO: CDVDPlayerAudio::Decode dts:1567347 pts:1567347 size:627
+08:21:39 T:1798399274    INFO: CDVDPlayerAudio::Decode dts:1593469 pts:1593469 size:627
+08:21:39 T:1798399525    INFO: CDVDPlayerAudio::Decode dts:1619592 pts:1619592 size:627
+08:21:39 T:1798399723    INFO: CDVDPlayerAudio::Decode dts:1645714 pts:1645714 size:627
+08:21:39 T:1798401398    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798401472    INFO: CDVDPlayerAudio::Decode dts:1671837 pts:1671837 size:626
+08:21:39 T:1798401663    INFO: CDVDPlayerAudio::Decode dts:1697959 pts:1697959 size:627
+08:21:39 T:1798401827    INFO: CDVDPlayerAudio::Decode dts:1724082 pts:1724082 size:627
+08:21:39 T:1798401987    INFO: CDVDPlayerAudio::Decode dts:1750204 pts:1750204 size:627
+08:21:39 T:1798402164    INFO: CDVDPlayerAudio::Decode dts:1776327 pts:1776327 size:627
+08:21:39 T:1798402375    INFO: CDVDPlayerAudio::Decode dts:1802449 pts:1802449 size:627
+08:21:39 T:1798402583    INFO: CDVDPlayerAudio::Decode dts:1828571 pts:1828571 size:627
+08:21:39 T:1798405671    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798405789    INFO: CDVDPlayerAudio::Decode dts:1854694 pts:1854694 size:627
+08:21:39 T:1798406026    INFO: CDVDPlayerAudio::Decode dts:1880816 pts:1880816 size:627
+08:21:39 T:1798406222    INFO: CDVDPlayerAudio::Decode dts:1906939 pts:1906939 size:627
+08:21:39 T:1798406389    INFO: CDVDPlayerAudio::Decode dts:1933061 pts:1933061 size:627
+08:21:39 T:1798406558    INFO: CDVDPlayerAudio::Decode dts:1959184 pts:1959184 size:627
+08:21:39 T:1798406727    INFO: CDVDPlayerAudio::Decode dts:1985306 pts:1985306 size:627
+08:21:39 T:1798406894    INFO: CDVDPlayerAudio::Decode dts:2011429 pts:2011429 size:627
+08:21:39 T:1798409101    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798409314    INFO: CDVDPlayerAudio::Decode dts:2037551 pts:2037551 size:627
+08:21:39 T:1798409616    INFO: CDVDPlayerAudio::Decode dts:2063673 pts:2063673 size:627
+08:21:39 T:1798409794    INFO: CDVDPlayerAudio::Decode dts:2089796 pts:2089796 size:626
+08:21:39 T:1798409954    INFO: CDVDPlayerAudio::Decode dts:2115918 pts:2115918 size:627
+08:21:39 T:1798410117    INFO: CDVDPlayerAudio::Decode dts:2142041 pts:2142041 size:627
+08:21:39 T:1798410274    INFO: CDVDPlayerAudio::Decode dts:2168163 pts:2168163 size:627
+08:21:39 T:1798410440    INFO: CDVDPlayerAudio::Decode dts:2194286 pts:2194286 size:627
+08:21:39 T:1798411823    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798411877    INFO: CDVDPlayerAudio::Decode dts:2220408 pts:2220408 size:627
+08:21:39 T:1798412049    INFO: CDVDPlayerAudio::Decode dts:2246531 pts:2246531 size:627
+08:21:39 T:1798412206    INFO: CDVDPlayerAudio::Decode dts:2272653 pts:2272653 size:627
+08:21:39 T:1798412374    INFO: CDVDPlayerAudio::Decode dts:2298776 pts:2298776 size:627
+08:21:39 T:1798412531    INFO: CDVDPlayerAudio::Decode dts:2324898 pts:2324898 size:627
+08:21:39 T:1798412685    INFO: CDVDPlayerAudio::Decode dts:2351020 pts:2351020 size:627
+08:21:39 T:1798412840    INFO: CDVDPlayerAudio::Decode dts:2377143 pts:2377143 size:627
+08:21:39 T:1798414292    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798414337    INFO: CDVDPlayerAudio::Decode dts:2403265 pts:2403265 size:627
+08:21:39 T:1798414505    INFO: CDVDPlayerAudio::Decode dts:2429388 pts:2429388 size:627
+08:21:39 T:1798414659    INFO: CDVDPlayerAudio::Decode dts:2455510 pts:2455510 size:627
+08:21:39 T:1798414810    INFO: CDVDPlayerAudio::Decode dts:2481633 pts:2481633 size:627
+08:21:39 T:1798414963    INFO: CDVDPlayerAudio::Decode dts:2507755 pts:2507755 size:627
+08:21:39 T:1798415137    INFO: CDVDPlayerAudio::Decode dts:2533878 pts:2533878 size:626
+08:21:39 T:1798415295    INFO: CDVDPlayerAudio::Decode dts:2560000 pts:2560000 size:627
+08:21:39 T:1798416572    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798416621    INFO: CDVDPlayerAudio::Decode dts:2586122 pts:2586122 size:627
+08:21:39 T:1798416657   DEBUG: Normal M:-155759 (A:2560000 V:0) P:0 A:2.72 V:0.16/T:0.20 (0,0,1,1) A:23% V:0% (2.56,6.34)
+08:21:39 T:1798416799    INFO: CDVDPlayerAudio::Decode dts:2612245 pts:2612245 size:627
+08:21:39 T:1798416961    INFO: CDVDPlayerAudio::Decode dts:2638367 pts:2638367 size:627
+08:21:39 T:1798417171    INFO: CDVDPlayerAudio::Decode dts:2664490 pts:2664490 size:627
+08:21:39 T:1798417332    INFO: CDVDPlayerAudio::Decode dts:2690612 pts:2690612 size:627
+08:21:39 T:1798417488    INFO: CDVDPlayerAudio::Decode dts:2716735 pts:2716735 size:627
+08:21:39 T:1798417646    INFO: CDVDPlayerAudio::Decode dts:2742857 pts:2742857 size:627
+08:21:39 T:1798419211    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798419274    INFO: CDVDPlayerAudio::Decode dts:2768980 pts:2768980 size:627
+08:21:39 T:1798419452    INFO: CDVDPlayerAudio::Decode dts:2795102 pts:2795102 size:627
+08:21:39 T:1798419606    INFO: CDVDPlayerAudio::Decode dts:2821224 pts:2821224 size:627
+08:21:39 T:1798419762    INFO: CDVDPlayerAudio::Decode dts:2847347 pts:2847347 size:627
+08:21:39 T:1798419914    INFO: CDVDPlayerAudio::Decode dts:2873469 pts:2873469 size:627
+08:21:39 T:1798420072    INFO: CDVDPlayerAudio::Decode dts:2899592 pts:2899592 size:627
+08:21:39 T:1798420224    INFO: CDVDPlayerAudio::Decode dts:2925714 pts:2925714 size:627
+08:21:39 T:1798421339    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798421377    INFO: CDVDPlayerAudio::Decode dts:2951837 pts:2951837 size:626
+08:21:39 T:1798421537    INFO: CDVDPlayerAudio::Decode dts:2977959 pts:2977959 size:627
+08:21:39 T:1798421693    INFO: CDVDPlayerAudio::Decode dts:3004082 pts:3004082 size:627
+08:21:39 T:1798421858    INFO: CDVDPlayerAudio::Decode dts:3030204 pts:3030204 size:627
+08:21:39 T:1798422013    INFO: CDVDPlayerAudio::Decode dts:3056327 pts:3056327 size:627
+08:21:39 T:1798422173    INFO: CDVDPlayerAudio::Decode dts:3082449 pts:3082449 size:627
+08:21:39 T:1798422325    INFO: CDVDPlayerAudio::Decode dts:3108571 pts:3108571 size:627
+08:21:39 T:1798423332    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798423365    INFO: CDVDPlayerAudio::Decode dts:3134694 pts:3134694 size:627
+08:21:39 T:1798423517    INFO: CDVDPlayerAudio::Decode dts:3160816 pts:3160816 size:627
+08:21:39 T:1798423669    INFO: CDVDPlayerAudio::Decode dts:3186939 pts:3186939 size:627
+08:21:39 T:1798423822    INFO: CDVDPlayerAudio::Decode dts:3213061 pts:3213061 size:627
+08:21:39 T:1798423972    INFO: CDVDPlayerAudio::Decode dts:3239184 pts:3239184 size:627
+08:21:39 T:1798424135    INFO: CDVDPlayerAudio::Decode dts:3265306 pts:3265306 size:627
+08:21:39 T:1798424285    INFO: CDVDPlayerAudio::Decode dts:3291429 pts:3291429 size:627
+08:21:39 T:1798424843    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798424875    INFO: CDVDPlayerAudio::Decode dts:3317551 pts:3317551 size:627
+08:21:39 T:1798425029    INFO: CDVDPlayerAudio::Decode dts:3343673 pts:3343673 size:627
+08:21:39 T:1798425183    INFO: CDVDPlayerAudio::Decode dts:3369796 pts:3369796 size:626
+08:21:39 T:1798425336    INFO: CDVDPlayerAudio::Decode dts:3395918 pts:3395918 size:627
+08:21:39 T:1798425488    INFO: CDVDPlayerAudio::Decode dts:3422041 pts:3422041 size:627
+08:21:39 T:1798425654    INFO: CDVDPlayerAudio::Decode dts:3448163 pts:3448163 size:627
+08:21:39 T:1798425807    INFO: CDVDPlayerAudio::Decode dts:3474286 pts:3474286 size:627
+08:21:39 T:1798426368    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798426401    INFO: CDVDPlayerAudio::Decode dts:3500408 pts:3500408 size:627
+08:21:39 T:1798426572    INFO: CDVDPlayerAudio::Decode dts:3526531 pts:3526531 size:627
+08:21:39 T:1798426730    INFO: CDVDPlayerAudio::Decode dts:3552653 pts:3552653 size:627
+08:21:39 T:1798426892    INFO: CDVDPlayerAudio::Decode dts:3578776 pts:3578776 size:627
+08:21:39 T:1798427053    INFO: CDVDPlayerAudio::Decode dts:3604898 pts:3604898 size:627
+08:21:39 T:1798427211    INFO: CDVDPlayerAudio::Decode dts:3631020 pts:3631020 size:627
+08:21:39 T:1798427370    INFO: CDVDPlayerAudio::Decode dts:3657143 pts:3657143 size:627
+08:21:39 T:1798428216    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798428247    INFO: CDVDPlayerAudio::Decode dts:3683265 pts:3683265 size:627
+08:21:39 T:1798428407    INFO: CDVDPlayerAudio::Decode dts:3709388 pts:3709388 size:627
+08:21:39 T:1798428597    INFO: CDVDPlayerAudio::Decode dts:3735510 pts:3735510 size:627
+08:21:39 T:1798428754    INFO: CDVDPlayerAudio::Decode dts:3761633 pts:3761633 size:627
+08:21:39 T:1798428917    INFO: CDVDPlayerAudio::Decode dts:3787755 pts:3787755 size:627
+08:21:39 T:1798429069    INFO: CDVDPlayerAudio::Decode dts:3813878 pts:3813878 size:626
+08:21:39 T:1798429241    INFO: CDVDPlayerAudio::Decode dts:3840000 pts:3840000 size:627
+08:21:39 T:1798429823    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798429857    INFO: CDVDPlayerAudio::Decode dts:3866122 pts:3866122 size:627
+08:21:39 T:1798430027    INFO: CDVDPlayerAudio::Decode dts:3892245 pts:3892245 size:627
+08:21:39 T:1798430180    INFO: CDVDPlayerAudio::Decode dts:3918367 pts:3918367 size:627
+08:21:39 T:1798430330    INFO: CDVDPlayerAudio::Decode dts:3944490 pts:3944490 size:627
+08:21:39 T:1798430483    INFO: CDVDPlayerAudio::Decode dts:3970612 pts:3970612 size:627
+08:21:39 T:1798430637    INFO: CDVDPlayerAudio::Decode dts:3996735 pts:3996735 size:627
+08:21:39 T:1798430802    INFO: CDVDPlayerAudio::Decode dts:4022857 pts:4022857 size:627
+08:21:39 T:1798431364    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798431395    INFO: CDVDPlayerAudio::Decode dts:4048980 pts:4048980 size:627
+08:21:39 T:1798431552    INFO: CDVDPlayerAudio::Decode dts:4075102 pts:4075102 size:627
+08:21:39 T:1798431706    INFO: CDVDPlayerAudio::Decode dts:4101224 pts:4101224 size:627
+08:21:39 T:1798431874    INFO: CDVDPlayerAudio::Decode dts:4127347 pts:4127347 size:627
+08:21:39 T:1798432027    INFO: CDVDPlayerAudio::Decode dts:4153469 pts:4153469 size:627
+08:21:39 T:1798432179    INFO: CDVDPlayerAudio::Decode dts:4179592 pts:4179592 size:627
+08:21:39 T:1798432330    INFO: CDVDPlayerAudio::Decode dts:4205714 pts:4205714 size:627
+08:21:39 T:1798432897    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798432929    INFO: CDVDPlayerAudio::Decode dts:4231837 pts:4231837 size:626
+08:21:39 T:1798433085    INFO: CDVDPlayerAudio::Decode dts:4257959 pts:4257959 size:627
+08:21:39 T:1798433239    INFO: CDVDPlayerAudio::Decode dts:4284082 pts:4284082 size:627
+08:21:39 T:1798433389    INFO: CDVDPlayerAudio::Decode dts:4310204 pts:4310204 size:627
+08:21:39 T:1798433540    INFO: CDVDPlayerAudio::Decode dts:4336327 pts:4336327 size:627
+08:21:39 T:1798433692    INFO: CDVDPlayerAudio::Decode dts:4362449 pts:4362449 size:627
+08:21:39 T:1798433845    INFO: CDVDPlayerAudio::Decode dts:4388571 pts:4388571 size:627
+08:21:39 T:1798434401    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798434431    INFO: CDVDPlayerAudio::Decode dts:4414694 pts:4414694 size:627
+08:21:39 T:1798434584    INFO: CDVDPlayerAudio::Decode dts:4440816 pts:4440816 size:627
+08:21:39 T:1798434735    INFO: CDVDPlayerAudio::Decode dts:4466939 pts:4466939 size:627
+08:21:39 T:1798434904    INFO: CDVDPlayerAudio::Decode dts:4493061 pts:4493061 size:627
+08:21:39 T:1798435070    INFO: CDVDPlayerAudio::Decode dts:4519184 pts:4519184 size:627
+08:21:39 T:1798435225    INFO: CDVDPlayerAudio::Decode dts:4545306 pts:4545306 size:627
+08:21:39 T:1798435382    INFO: CDVDPlayerAudio::Decode dts:4571429 pts:4571429 size:627
+08:21:39 T:1798435927    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798435958    INFO: CDVDPlayerAudio::Decode dts:4597551 pts:4597551 size:627
+08:21:39 T:1798436120    INFO: CDVDPlayerAudio::Decode dts:4623673 pts:4623673 size:627
+08:21:39 T:1798436278    INFO: CDVDPlayerAudio::Decode dts:4649796 pts:4649796 size:626
+08:21:39 T:1798436437    INFO: CDVDPlayerAudio::Decode dts:4675918 pts:4675918 size:627
+08:21:39 T:1798436595    INFO: CDVDPlayerAudio::Decode dts:4702041 pts:4702041 size:627
+08:21:39 T:1798436751    INFO: CDVDPlayerAudio::Decode dts:4728163 pts:4728163 size:627
+08:21:39 T:1798436862   DEBUG: Normal M:-134664 (A:4728163 V:0) P:0 A:4.86 V:0.13/T:0.20 (0,0,1,1) A:21% V:0% (4.55,6.34)
+08:21:39 T:1798436905    INFO: CDVDPlayerAudio::Decode dts:4754286 pts:4754286 size:627
+08:21:39 T:1798437803    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798437837    INFO: CDVDPlayerAudio::Decode dts:4780408 pts:4780408 size:627
+08:21:39 T:1798437992    INFO: CDVDPlayerAudio::Decode dts:4806531 pts:4806531 size:627
+08:21:39 T:1798438149    INFO: CDVDPlayerAudio::Decode dts:4832653 pts:4832653 size:627
+08:21:39 T:1798438314    INFO: CDVDPlayerAudio::Decode dts:4858776 pts:4858776 size:627
+08:21:39 T:1798438466    INFO: CDVDPlayerAudio::Decode dts:4884898 pts:4884898 size:627
+08:21:39 T:1798438617    INFO: CDVDPlayerAudio::Decode dts:4911020 pts:4911020 size:627
+08:21:39 T:1798438769    INFO: CDVDPlayerAudio::Decode dts:4937143 pts:4937143 size:627
+08:21:39 T:1798439401    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798439445    INFO: CDVDPlayerAudio::Decode dts:4963265 pts:4963265 size:627
+08:21:39 T:1798439608    INFO: CDVDPlayerAudio::Decode dts:4989388 pts:4989388 size:627
+08:21:39 T:1798439773    INFO: CDVDPlayerAudio::Decode dts:5015510 pts:5015510 size:627
+08:21:39 T:1798439928    INFO: CDVDPlayerAudio::Decode dts:5041633 pts:5041633 size:627
+08:21:39 T:1798440081    INFO: CDVDPlayerAudio::Decode dts:5067755 pts:5067755 size:627
+08:21:39 T:1798440235    INFO: CDVDPlayerAudio::Decode dts:5093878 pts:5093878 size:626
+08:21:39 T:1798440387    INFO: CDVDPlayerAudio::Decode dts:5120000 pts:5120000 size:627
+08:21:39 T:1798440947    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798440979    INFO: CDVDPlayerAudio::Decode dts:5146122 pts:5146122 size:627
+08:21:39 T:1798441134    INFO: CDVDPlayerAudio::Decode dts:5172245 pts:5172245 size:627
+08:21:39 T:1798441285    INFO: CDVDPlayerAudio::Decode dts:5198367 pts:5198367 size:627
+08:21:39 T:1798441450    INFO: CDVDPlayerAudio::Decode dts:5224490 pts:5224490 size:627
+08:21:39 T:1798441611    INFO: CDVDPlayerAudio::Decode dts:5250612 pts:5250612 size:627
+08:21:39 T:1798441762    INFO: CDVDPlayerAudio::Decode dts:5276735 pts:5276735 size:627
+08:21:39 T:1798441912    INFO: CDVDPlayerAudio::Decode dts:5302857 pts:5302857 size:627
+08:21:39 T:1798442494    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798442525    INFO: CDVDPlayerAudio::Decode dts:5328980 pts:5328980 size:627
+08:21:39 T:1798442679    INFO: CDVDPlayerAudio::Decode dts:5355102 pts:5355102 size:627
+08:21:39 T:1798442831    INFO: CDVDPlayerAudio::Decode dts:5381224 pts:5381224 size:627
+08:21:39 T:1798442983    INFO: CDVDPlayerAudio::Decode dts:5407347 pts:5407347 size:627
+08:21:39 T:1798443135    INFO: CDVDPlayerAudio::Decode dts:5433469 pts:5433469 size:627
+08:21:39 T:1798443287    INFO: CDVDPlayerAudio::Decode dts:5459592 pts:5459592 size:627
+08:21:39 T:1798443439    INFO: CDVDPlayerAudio::Decode dts:5485714 pts:5485714 size:627
+08:21:39 T:1798443989    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798444020    INFO: CDVDPlayerAudio::Decode dts:5511837 pts:5511837 size:626
+08:21:39 T:1798444181    INFO: CDVDPlayerAudio::Decode dts:5537959 pts:5537959 size:627
+08:21:39 T:1798444338    INFO: CDVDPlayerAudio::Decode dts:5564082 pts:5564082 size:627
+08:21:39 T:1798444495    INFO: CDVDPlayerAudio::Decode dts:5590204 pts:5590204 size:627
+08:21:39 T:1798444649    INFO: CDVDPlayerAudio::Decode dts:5616327 pts:5616327 size:627
+08:21:39 T:1798444806    INFO: CDVDPlayerAudio::Decode dts:5642449 pts:5642449 size:627
+08:21:39 T:1798444963    INFO: CDVDPlayerAudio::Decode dts:5668571 pts:5668571 size:627
+08:21:39 T:1798445520    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798445550    INFO: CDVDPlayerAudio::Decode dts:5694694 pts:5694694 size:627
+08:21:39 T:1798445710    INFO: CDVDPlayerAudio::Decode dts:5720816 pts:5720816 size:627
+08:21:39 T:1798445866    INFO: CDVDPlayerAudio::Decode dts:5746939 pts:5746939 size:627
+08:21:39 T:1798446022    INFO: CDVDPlayerAudio::Decode dts:5773061 pts:5773061 size:627
+08:21:39 T:1798446174    INFO: CDVDPlayerAudio::Decode dts:5799184 pts:5799184 size:627
+08:21:39 T:1798446324    INFO: CDVDPlayerAudio::Decode dts:5825306 pts:5825306 size:627
+08:21:39 T:1798446503    INFO: CDVDPlayerAudio::Decode dts:5851429 pts:5851429 size:627
+08:21:39 T:1798447057    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798447089    INFO: CDVDPlayerAudio::Decode dts:5877551 pts:5877551 size:627
+08:21:39 T:1798447241    INFO: CDVDPlayerAudio::Decode dts:5903673 pts:5903673 size:627
+08:21:39 T:1798447394    INFO: CDVDPlayerAudio::Decode dts:5929796 pts:5929796 size:626
+08:21:39 T:1798447546    INFO: CDVDPlayerAudio::Decode dts:5955918 pts:5955918 size:627
+08:21:39 T:1798447698    INFO: CDVDPlayerAudio::Decode dts:5982041 pts:5982041 size:627
+08:21:39 T:1798447850    INFO: CDVDPlayerAudio::Decode dts:6008163 pts:6008163 size:627
+08:21:39 T:1798448017    INFO: CDVDPlayerAudio::Decode dts:6034286 pts:6034286 size:627
+08:21:39 T:1798448581    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798448613    INFO: CDVDPlayerAudio::Decode dts:6060408 pts:6060408 size:627
+08:21:39 T:1798448768    INFO: CDVDPlayerAudio::Decode dts:6086531 pts:6086531 size:627
+08:21:39 T:1798448920    INFO: CDVDPlayerAudio::Decode dts:6112653 pts:6112653 size:627
+08:21:39 T:1798449075    INFO: CDVDPlayerAudio::Decode dts:6138776 pts:6138776 size:627
+08:21:39 T:1798449254    INFO: CDVDPlayerAudio::Decode dts:6164898 pts:6164898 size:627
+08:21:39 T:1798449411    INFO: CDVDPlayerAudio::Decode dts:6191020 pts:6191020 size:627
+08:21:39 T:1798449564    INFO: CDVDPlayerAudio::Decode dts:6217143 pts:6217143 size:627
+08:21:39 T:1798457051   DEBUG: Normal M:-114476 (A:6217143 V:0) P:0 A:6.33 V:0.11/T:0.20 (0,0,1,1) A:20% V:0% (5.99,6.34)
+08:21:39 T:1798477228   DEBUG: Normal M:-94297 (A:6217143 V:0) P:0 A:6.31 V:0.09/T:0.20 (0,0,1,1) A:20% V:0% (5.97,6.34)
+08:21:39 T:1798497660   DEBUG: Normal M:-74020 (A:6217143 V:0) P:0 A:6.29 V:0.07/T:0.20 (0,0,1,1) A:20% V:0% (5.95,6.34)
+08:21:39 T:1798517868   DEBUG: Normal M:-53561 (A:6217143 V:0) P:0 A:6.27 V:0.05/T:0.20 (0,0,1,1) A:20% V:0% (5.93,6.34)
+08:21:39 T:1798538047   DEBUG: Normal M:-33382 (A:6217143 V:0) P:0 A:6.25 V:0.03/T:0.20 (0,0,1,1) A:20% V:0% (5.91,6.34)
+08:21:39 T:1798558260   DEBUG: Normal M:-13174 (A:6217143 V:0) P:0 A:6.23 V:0.01/T:0.20 (0,0,1,1) A:20% V:0% (5.89,6.34)
+08:21:39 T:1798570960    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798571043    INFO: CDVDPlayerAudio::Decode dts:6243265 pts:6243265 size:627
+08:21:39 T:1798571250    INFO: CDVDPlayerAudio::Decode dts:6269388 pts:6269388 size:627
+08:21:39 T:1798571421    INFO: CDVDPlayerAudio::Decode dts:6295510 pts:6295510 size:627
+08:21:39 T:1798571573    INFO: CDVDPlayerAudio::Decode dts:6321633 pts:6321633 size:627
+08:21:39 T:1798571724    INFO: CDVDPlayerAudio::Decode dts:6347755 pts:6347755 size:627
+08:21:39 T:1798571877    INFO: CDVDPlayerAudio::Decode dts:6373878 pts:6373878 size:626
+08:21:39 T:1798572031    INFO: CDVDPlayerAudio::Decode dts:6400000 pts:6400000 size:627
+08:21:39 T:1798578523   DEBUG: Normal M:7091 (A:6400000 V:0) P:0 A:6.39 V:-0.01/T:0.20 (0,0,1,1) A:20% V:0% (6.05,6.34)
+08:21:39 T:1798598873   DEBUG: Normal M:27197 (A:6400000 V:0) P:0 A:6.37 V:-0.03/T:0.20 (0,0,1,1) A:20% V:0% (6.03,6.34)
+08:21:39 T:1798619077   DEBUG: Normal M:47551 (A:6400000 V:0) P:0 A:6.35 V:-0.05/T:0.20 (0,0,1,1) A:20% V:0% (6.01,6.34)
+08:21:39 T:1798639258   DEBUG: Normal M:67733 (A:6400000 V:0) P:0 A:6.33 V:-0.07/T:0.20 (0,0,1,1) A:20% V:0% (5.99,6.34)
+08:21:39 T:1798659460   DEBUG: Normal M:87930 (A:6400000 V:0) P:0 A:6.31 V:-0.09/T:0.20 (0,0,1,1) A:20% V:0% (5.97,6.34)
+08:21:39 T:1798680201   DEBUG: Normal M:108673 (A:6400000 V:0) P:0 A:6.29 V:-0.11/T:0.20 (0,0,1,1) A:20% V:0% (5.95,6.34)
+08:21:39 T:1798700573   DEBUG: Normal M:128886 (A:6400000 V:0) P:0 A:6.27 V:-0.13/T:0.20 (0,0,1,1) A:20% V:0% (5.93,6.34)
+08:21:39 T:1798720785   DEBUG: Normal M:149269 (A:6400000 V:0) P:0 A:6.25 V:-0.15/T:0.20 (0,0,1,1) A:20% V:0% (5.91,6.34)
+08:21:39 T:1798740963   DEBUG: Normal M:169447 (A:6400000 V:0) P:0 A:6.23 V:-0.17/T:0.20 (0,0,1,1) A:20% V:0% (5.89,6.34)
+08:21:39 T:1798756121    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:39 T:1798756208    INFO: CDVDPlayerAudio::Decode dts:6426122 pts:6426122 size:627
+08:21:39 T:1798756412    INFO: CDVDPlayerAudio::Decode dts:6452245 pts:6452245 size:627
+08:21:39 T:1798756572    INFO: CDVDPlayerAudio::Decode dts:6478367 pts:6478367 size:627
+08:21:39 T:1798756727    INFO: CDVDPlayerAudio::Decode dts:6504490 pts:6504490 size:627
+08:21:39 T:1798756904    INFO: CDVDPlayerAudio::Decode dts:6530612 pts:6530612 size:627
+08:21:39 T:1798757062    INFO: CDVDPlayerAudio::Decode dts:6556735 pts:6556735 size:627
+08:21:39 T:1798757218    INFO: CDVDPlayerAudio::Decode dts:6582857 pts:6582857 size:627
+08:21:39 T:1798761148   DEBUG: Normal M:189632 (A:6582857 V:0) P:0 A:6.39 V:-0.19/T:0.20 (0,0,1,1) A:19% V:0% (6.05,6.34)
+08:21:39 T:1798781331   DEBUG: Normal M:209816 (A:6582857 V:0) P:0 A:6.37 V:-0.21/T:0.20 (0,0,1,1) A:19% V:0% (6.03,6.34)
+08:21:39 T:1798805963   DEBUG: Normal M:234272 (A:6582857 V:0) P:0 A:6.35 V:-0.23/T:0.20 (0,0,1,1) A:19% V:0% (6.01,6.34)
+08:21:39 T:1798826206   DEBUG: Normal M:254693 (A:6582857 V:0) P:0 A:6.33 V:-0.25/T:0.20 (0,0,1,1) A:19% V:0% (5.99,6.34)
+08:21:39 T:1798846388   DEBUG: Normal M:274876 (A:6582857 V:0) P:0 A:6.31 V:-0.27/T:0.20 (0,0,1,1) A:19% V:0% (5.97,6.34)
+08:21:40 T:1798866566   DEBUG: Normal M:295054 (A:6582857 V:0) P:0 A:6.29 V:-0.30/T:0.20 (0,0,1,1) A:19% V:0% (5.95,6.34)
+08:21:40 T:1798886747   DEBUG: Normal M:315234 (A:6582857 V:0) P:0 A:6.27 V:-0.32/T:0.20 (0,0,1,1) A:19% V:0% (5.93,6.34)
+08:21:40 T:1798909020   DEBUG: Normal M:337287 (A:6582857 V:0) P:0 A:6.25 V:-0.34/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:40 T:1798929281   DEBUG: Normal M:359581 (A:6582857 V:0) P:0 A:6.22 V:-0.36/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:40 T:1798939181    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:40 T:1798939261    INFO: CDVDPlayerAudio::Decode dts:6608980 pts:6608980 size:627
+08:21:40 T:1798939603    INFO: CDVDPlayerAudio::Decode dts:6635102 pts:6635102 size:627
+08:21:40 T:1798939904    INFO: CDVDPlayerAudio::Decode dts:6661224 pts:6661224 size:627
+08:21:40 T:1798940199    INFO: CDVDPlayerAudio::Decode dts:6687347 pts:6687347 size:627
+08:21:40 T:1798940493    INFO: CDVDPlayerAudio::Decode dts:6713469 pts:6713469 size:627
+08:21:40 T:1798940787    INFO: CDVDPlayerAudio::Decode dts:6739592 pts:6739592 size:627
+08:21:40 T:1798941079    INFO: CDVDPlayerAudio::Decode dts:6765714 pts:6765714 size:627
+08:21:40 T:1798949537   DEBUG: Normal M:379836 (A:6765714 V:0) P:0 A:6.39 V:-0.38/T:0.20 (0,0,1,1) A:19% V:0% (6.05,6.34)
+08:21:40 T:1798969792   DEBUG: Normal M:400092 (A:6765714 V:0) P:0 A:6.37 V:-0.40/T:0.20 (0,0,1,1) A:19% V:0% (6.03,6.34)
+08:21:40 T:1798990039   DEBUG: Normal M:420339 (A:6765714 V:0) P:0 A:6.35 V:-0.42/T:0.20 (0,0,1,1) A:19% V:0% (6.01,6.34)
+08:21:40 T:1799013429   DEBUG: Normal M:441649 (A:6765714 V:0) P:0 A:6.32 V:-0.44/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:40 T:1799033729   DEBUG: Normal M:465074 (A:6765714 V:0) P:0 A:6.30 V:-0.47/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:40 T:1799059273   DEBUG: Normal M:490612 (A:6765714 V:0) P:0 A:6.28 V:-0.49/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:40 T:1799079667   DEBUG: Normal M:511009 (A:6765714 V:0) P:0 A:6.25 V:-0.51/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:40 T:1799100008   DEBUG: Normal M:531353 (A:6765714 V:0) P:0 A:6.23 V:-0.53/T:0.20 (0,0,1,1) A:19% V:0% (5.89,6.34)
+08:21:40 T:1799120538   DEBUG: Normal M:548799 (A:6765714 V:0) P:0 A:6.22 V:-0.55/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:40 T:1799133585    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:40 T:1799133682    INFO: CDVDPlayerAudio::Decode dts:6791837 pts:6791837 size:626
+08:21:40 T:1799134060    INFO: CDVDPlayerAudio::Decode dts:6817959 pts:6817959 size:627
+08:21:40 T:1799134392    INFO: CDVDPlayerAudio::Decode dts:6844082 pts:6844082 size:627
+08:21:40 T:1799134721    INFO: CDVDPlayerAudio::Decode dts:6870204 pts:6870204 size:627
+08:21:40 T:1799135049    INFO: CDVDPlayerAudio::Decode dts:6896327 pts:6896327 size:627
+08:21:40 T:1799135376    INFO: CDVDPlayerAudio::Decode dts:6922449 pts:6922449 size:627
+08:21:40 T:1799135750    INFO: CDVDPlayerAudio::Decode dts:6948571 pts:6948571 size:627
+08:21:40 T:1799140828   DEBUG: Normal M:569275 (A:6948571 V:0) P:0 A:6.38 V:-0.57/T:0.20 (0,0,1,1) A:19% V:0% (6.04,6.34)
+08:21:40 T:1799161104   DEBUG: Normal M:589551 (A:6948571 V:0) P:0 A:6.36 V:-0.59/T:0.20 (0,0,1,1) A:19% V:0% (6.02,6.34)
+08:21:40 T:1799181371   DEBUG: Normal M:609819 (A:6948571 V:0) P:0 A:6.34 V:-0.61/T:0.20 (0,0,1,1) A:19% V:0% (6.00,6.34)
+08:21:40 T:1799201642   DEBUG: Normal M:630089 (A:6948571 V:0) P:0 A:6.32 V:-0.63/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:40 T:1799222161   DEBUG: Normal M:650407 (A:6948571 V:0) P:0 A:6.30 V:-0.65/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:40 T:1799242463   DEBUG: Normal M:670909 (A:6948571 V:0) P:0 A:6.28 V:-0.67/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:40 T:1799262809   DEBUG: Normal M:691255 (A:6948571 V:0) P:0 A:6.26 V:-0.69/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:40 T:1799283102   DEBUG: Normal M:711548 (A:6948571 V:0) P:0 A:6.24 V:-0.71/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:40 T:1799303416   DEBUG: Normal M:731858 (A:6948571 V:0) P:0 A:6.22 V:-0.73/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:40 T:1799318352    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:40 T:1799318467    INFO: CDVDPlayerAudio::Decode dts:6974694 pts:6974694 size:627
+08:21:40 T:1799318837    INFO: CDVDPlayerAudio::Decode dts:7000816 pts:7000816 size:627
+08:21:40 T:1799319309    INFO: CDVDPlayerAudio::Decode dts:7026939 pts:7026939 size:627
+08:21:40 T:1799319658    INFO: CDVDPlayerAudio::Decode dts:7053061 pts:7053061 size:627
+08:21:40 T:1799320009    INFO: CDVDPlayerAudio::Decode dts:7079184 pts:7079184 size:627
+08:21:40 T:1799320338    INFO: CDVDPlayerAudio::Decode dts:7105306 pts:7105306 size:627
+08:21:40 T:1799320666    INFO: CDVDPlayerAudio::Decode dts:7131429 pts:7131429 size:627
+08:21:40 T:1799323962   DEBUG: Normal M:752240 (A:7131429 V:0) P:0 A:6.38 V:-0.75/T:0.20 (0,0,1,1) A:19% V:0% (6.04,6.34)
+08:21:40 T:1799344230   DEBUG: Normal M:772666 (A:7131429 V:0) P:0 A:6.36 V:-0.77/T:0.20 (0,0,1,1) A:19% V:0% (6.02,6.34)
+08:21:40 T:1799364500   DEBUG: Normal M:792936 (A:7131429 V:0) P:0 A:6.34 V:-0.79/T:0.20 (0,0,1,1) A:19% V:0% (6.00,6.34)
+08:21:40 T:1799384765   DEBUG: Normal M:813201 (A:7131429 V:0) P:0 A:6.32 V:-0.81/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:40 T:1799405032   DEBUG: Normal M:833468 (A:7131429 V:0) P:0 A:6.30 V:-0.83/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:40 T:1799425544   DEBUG: Normal M:853798 (A:7131429 V:0) P:0 A:6.28 V:-0.85/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:40 T:1799445844   DEBUG: Normal M:874289 (A:7131429 V:0) P:0 A:6.26 V:-0.87/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:40 T:1799466138   DEBUG: Normal M:894583 (A:7131429 V:0) P:0 A:6.24 V:-0.89/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:40 T:1799486431   DEBUG: Normal M:914876 (A:7131429 V:0) P:0 A:6.22 V:-0.91/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:40 T:1799503198    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:40 T:1799503348    INFO: CDVDPlayerAudio::Decode dts:7157551 pts:7157551 size:627
+08:21:40 T:1799503800    INFO: CDVDPlayerAudio::Decode dts:7183673 pts:7183673 size:627
+08:21:40 T:1799504184    INFO: CDVDPlayerAudio::Decode dts:7209796 pts:7209796 size:626
+08:21:40 T:1799504564    INFO: CDVDPlayerAudio::Decode dts:7235918 pts:7235918 size:627
+08:21:40 T:1799504973    INFO: CDVDPlayerAudio::Decode dts:7262041 pts:7262041 size:627
+08:21:40 T:1799505351    INFO: CDVDPlayerAudio::Decode dts:7288163 pts:7288163 size:627
+08:21:40 T:1799505727    INFO: CDVDPlayerAudio::Decode dts:7314286 pts:7314286 size:627
+08:21:40 T:1799506735   DEBUG: Normal M:935178 (A:7314286 V:0) P:0 A:6.38 V:-0.94/T:0.20 (0,0,1,1) A:19% V:0% (6.04,6.34)
+08:21:40 T:1799527220   DEBUG: Normal M:955481 (A:7314286 V:0) P:0 A:6.36 V:-0.96/T:0.20 (0,0,1,1) A:19% V:0% (6.02,6.34)
+08:21:40 T:1799547520   DEBUG: Normal M:975974 (A:7314286 V:0) P:0 A:6.34 V:-0.98/T:0.20 (0,0,1,1) A:19% V:0% (6.00,6.34)
+08:21:40 T:1799567897   DEBUG: Normal M:996347 (A:7314286 V:0) P:0 A:6.32 V:-1.00/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:40 T:1799588240   DEBUG: Normal M:1016694 (A:7314286 V:0) P:0 A:6.30 V:-1.02/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:40 T:1799608552   DEBUG: Normal M:1037006 (A:7314286 V:0) P:0 A:6.28 V:-1.04/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:40 T:1799629016   DEBUG: Normal M:1057283 (A:7314286 V:0) P:0 A:6.26 V:-1.06/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:40 T:1799649298   DEBUG: Normal M:1077749 (A:7314286 V:0) P:0 A:6.24 V:-1.08/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:40 T:1799669573   DEBUG: Normal M:1098024 (A:7314286 V:0) P:0 A:6.22 V:-1.10/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:40 T:1799688280    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:40 T:1799688416    INFO: CDVDPlayerAudio::Decode dts:7340408 pts:7340408 size:627
+08:21:40 T:1799688796    INFO: CDVDPlayerAudio::Decode dts:7366531 pts:7366531 size:627
+08:21:40 T:1799689128    INFO: CDVDPlayerAudio::Decode dts:7392653 pts:7392653 size:627
+08:21:40 T:1799689505    INFO: CDVDPlayerAudio::Decode dts:7418776 pts:7418776 size:627
+08:21:40 T:1799689828    INFO: CDVDPlayerAudio::Decode dts:7444898 pts:7444898 size:627
+08:21:40 T:1799689915   DEBUG: Normal M:1118303 (A:7418776 V:0) P:0 A:6.30 V:-1.12/T:0.20 (0,0,1,1) A:19% V:0% (6.04,6.34)
+08:21:40 T:1799690164    INFO: CDVDPlayerAudio::Decode dts:7471020 pts:7471020 size:627
+08:21:40 T:1799690490    INFO: CDVDPlayerAudio::Decode dts:7497143 pts:7497143 size:627
+08:21:40 T:1799710191   DEBUG: Normal M:1138641 (A:7497143 V:0) P:0 A:6.36 V:-1.14/T:0.20 (0,0,1,1) A:19% V:0% (6.02,6.34)
+08:21:40 T:1799730672   DEBUG: Normal M:1158929 (A:7497143 V:0) P:0 A:6.34 V:-1.16/T:0.20 (0,0,1,1) A:19% V:0% (6.00,6.34)
+08:21:40 T:1799751060   DEBUG: Normal M:1179506 (A:7497143 V:0) P:0 A:6.32 V:-1.18/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:40 T:1799771356   DEBUG: Normal M:1199803 (A:7497143 V:0) P:0 A:6.30 V:-1.20/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:40 T:1799791650   DEBUG: Normal M:1220097 (A:7497143 V:0) P:0 A:6.28 V:-1.22/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:40 T:1799811983   DEBUG: Normal M:1240425 (A:7497143 V:0) P:0 A:6.26 V:-1.24/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:40 T:1799832495   DEBUG: Normal M:1260765 (A:7497143 V:0) P:0 A:6.24 V:-1.26/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:41 T:1799852771   DEBUG: Normal M:1281226 (A:7497143 V:0) P:0 A:6.22 V:-1.28/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:41 T:1799873003    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1799873102    INFO: CDVDPlayerAudio::Decode dts:7523265 pts:7523265 size:627
+08:21:41 T:1799873182   DEBUG: Normal M:1301500 (A:7497143 V:0) P:0 A:6.20 V:-1.30/T:0.20 (0,0,1,1) A:19% V:0% (6.04,6.34)
+08:21:41 T:1799873498    INFO: CDVDPlayerAudio::Decode dts:7549388 pts:7549388 size:627
+08:21:41 T:1799873841    INFO: CDVDPlayerAudio::Decode dts:7575510 pts:7575510 size:627
+08:21:41 T:1799874179    INFO: CDVDPlayerAudio::Decode dts:7601633 pts:7601633 size:627
+08:21:41 T:1799874513    INFO: CDVDPlayerAudio::Decode dts:7627755 pts:7627755 size:627
+08:21:41 T:1799874851    INFO: CDVDPlayerAudio::Decode dts:7653878 pts:7653878 size:626
+08:21:41 T:1799875186    INFO: CDVDPlayerAudio::Decode dts:7680000 pts:7680000 size:627
+08:21:41 T:1799893452   DEBUG: Normal M:1321907 (A:7680000 V:0) P:0 A:6.36 V:-1.32/T:0.20 (0,0,1,1) A:19% V:0% (6.02,6.34)
+08:21:41 T:1799913772   DEBUG: Normal M:1342226 (A:7680000 V:0) P:0 A:6.34 V:-1.34/T:0.20 (0,0,1,1) A:19% V:0% (6.00,6.34)
+08:21:41 T:1799934260   DEBUG: Normal M:1362521 (A:7680000 V:0) P:0 A:6.32 V:-1.36/T:0.20 (0,0,1,1) A:19% V:0% (5.98,6.34)
+08:21:41 T:1799954557   DEBUG: Normal M:1383008 (A:7680000 V:0) P:0 A:6.30 V:-1.38/T:0.20 (0,0,1,1) A:19% V:0% (5.96,6.34)
+08:21:41 T:1799974849   DEBUG: Normal M:1403301 (A:7680000 V:0) P:0 A:6.28 V:-1.40/T:0.20 (0,0,1,1) A:19% V:0% (5.94,6.34)
+08:21:41 T:1799995143   DEBUG: Normal M:1423594 (A:7680000 V:0) P:0 A:6.26 V:-1.42/T:0.20 (0,0,1,1) A:19% V:0% (5.92,6.34)
+08:21:41 T:1800015540   DEBUG: Normal M:1443990 (A:7680000 V:0) P:0 A:6.24 V:-1.44/T:0.20 (0,0,1,1) A:19% V:0% (5.90,6.34)
+08:21:41 T:1800036026   DEBUG: Normal M:1464291 (A:7680000 V:0) P:0 A:6.22 V:-1.46/T:0.20 (0,0,1,1) A:19% V:0% (5.88,6.34)
+08:21:41 T:1800056339   DEBUG: Normal M:1484785 (A:7680000 V:0) P:0 A:6.20 V:-1.48/T:0.20 (0,0,1,1) A:19% V:0% (5.86,6.34)
+08:21:41 T:1800058083    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1800058200    INFO: CDVDPlayerAudio::Decode dts:7706122 pts:7706122 size:627
+08:21:41 T:1800058660    INFO: CDVDPlayerAudio::Decode dts:7732245 pts:7732245 size:627
+08:21:41 T:1800059077    INFO: CDVDPlayerAudio::Decode dts:7758367 pts:7758367 size:627
+08:21:41 T:1800059584    INFO: CDVDPlayerAudio::Decode dts:7784490 pts:7784490 size:627
+08:21:41 T:1800059999    INFO: CDVDPlayerAudio::Decode dts:7810612 pts:7810612 size:627
+08:21:41 T:1800060398    INFO: CDVDPlayerAudio::Decode dts:7836735 pts:7836735 size:627
+08:21:41 T:1800060793    INFO: CDVDPlayerAudio::Decode dts:7862857 pts:7862857 size:627
+08:21:41 T:1800076749   DEBUG: Normal M:1505195 (A:7862857 V:0) P:0 A:6.36 V:-1.51/T:0.20 (0,0,1,1) A:18% V:0% (6.02,6.34)
+08:21:41 T:1800097088   DEBUG: Normal M:1525537 (A:7862857 V:0) P:0 A:6.34 V:-1.53/T:0.20 (0,0,1,1) A:18% V:0% (6.00,6.34)
+08:21:41 T:1800117425   DEBUG: Normal M:1545876 (A:7862857 V:0) P:0 A:6.32 V:-1.55/T:0.20 (0,0,1,1) A:18% V:0% (5.98,6.34)
+08:21:41 T:1800137932   DEBUG: Normal M:1566210 (A:7862857 V:0) P:0 A:6.30 V:-1.57/T:0.20 (0,0,1,1) A:18% V:0% (5.96,6.34)
+08:21:41 T:1800158202   DEBUG: Normal M:1586660 (A:7862857 V:0) P:0 A:6.28 V:-1.59/T:0.20 (0,0,1,1) A:18% V:0% (5.94,6.34)
+08:21:41 T:1800178469   DEBUG: Normal M:1606927 (A:7862857 V:0) P:0 A:6.26 V:-1.61/T:0.20 (0,0,1,1) A:18% V:0% (5.92,6.34)
+08:21:41 T:1800198851   DEBUG: Normal M:1627308 (A:7862857 V:0) P:0 A:6.24 V:-1.63/T:0.20 (0,0,1,1) A:18% V:0% (5.90,6.34)
+08:21:41 T:1800219199   DEBUG: Normal M:1647655 (A:7862857 V:0) P:0 A:6.22 V:-1.65/T:0.20 (0,0,1,1) A:18% V:0% (5.88,6.34)
+08:21:41 T:1800239687   DEBUG: Normal M:1667955 (A:7862857 V:0) P:0 A:6.19 V:-1.67/T:0.20 (0,0,1,1) A:18% V:0% (5.86,6.34)
+08:21:41 T:1800243411    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1800243506    INFO: CDVDPlayerAudio::Decode dts:7888980 pts:7888980 size:627
+08:21:41 T:1800243955    INFO: CDVDPlayerAudio::Decode dts:7915102 pts:7915102 size:627
+08:21:41 T:1800244337    INFO: CDVDPlayerAudio::Decode dts:7941224 pts:7941224 size:627
+08:21:41 T:1800244710    INFO: CDVDPlayerAudio::Decode dts:7967347 pts:7967347 size:627
+08:21:41 T:1800245080    INFO: CDVDPlayerAudio::Decode dts:7993469 pts:7993469 size:627
+08:21:41 T:1800245494    INFO: CDVDPlayerAudio::Decode dts:8019592 pts:8019592 size:627
+08:21:41 T:1800245881    INFO: CDVDPlayerAudio::Decode dts:8045714 pts:8045714 size:627
+08:21:41 T:1800259998   DEBUG: Normal M:1688447 (A:8045714 V:0) P:0 A:6.36 V:-1.69/T:0.20 (0,0,1,1) A:18% V:0% (6.02,6.34)
+08:21:41 T:1800280304   DEBUG: Normal M:1708754 (A:8045714 V:0) P:0 A:6.34 V:-1.71/T:0.20 (0,0,1,1) A:18% V:0% (6.00,6.34)
+08:21:41 T:1800300608   DEBUG: Normal M:1729057 (A:8045714 V:0) P:0 A:6.32 V:-1.73/T:0.20 (0,0,1,1) A:18% V:0% (5.98,6.34)
+08:21:41 T:1800320995   DEBUG: Normal M:1749443 (A:8045714 V:0) P:0 A:6.30 V:-1.75/T:0.20 (0,0,1,1) A:18% V:0% (5.96,6.34)
+08:21:41 T:1800341494   DEBUG: Normal M:1769771 (A:8045714 V:0) P:0 A:6.28 V:-1.77/T:0.20 (0,0,1,1) A:18% V:0% (5.94,6.34)
+08:21:41 T:1800361770   DEBUG: Normal M:1790226 (A:8045714 V:0) P:0 A:6.26 V:-1.79/T:0.20 (0,0,1,1) A:18% V:0% (5.92,6.34)
+08:21:41 T:1800382118   DEBUG: Normal M:1810574 (A:8045714 V:0) P:0 A:6.24 V:-1.81/T:0.20 (0,0,1,1) A:18% V:0% (5.90,6.34)
+08:21:41 T:1800402401   DEBUG: Normal M:1830852 (A:8045714 V:0) P:0 A:6.21 V:-1.83/T:0.20 (0,0,1,1) A:18% V:0% (5.88,6.34)
+08:21:41 T:1800422770   DEBUG: Normal M:1851224 (A:8045714 V:0) P:0 A:6.19 V:-1.85/T:0.20 (0,0,1,1) A:18% V:0% (5.85,6.34)
+08:21:41 T:1800438641    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1800438810    INFO: CDVDPlayerAudio::Decode dts:8071837 pts:8071837 size:626
+08:21:41 T:1800439308    INFO: CDVDPlayerAudio::Decode dts:8097959 pts:8097959 size:627
+08:21:41 T:1800439710    INFO: CDVDPlayerAudio::Decode dts:8124082 pts:8124082 size:627
+08:21:41 T:1800440093    INFO: CDVDPlayerAudio::Decode dts:8150204 pts:8150204 size:627
+08:21:41 T:1800440477    INFO: CDVDPlayerAudio::Decode dts:8176327 pts:8176327 size:627
+08:21:41 T:1800440899    INFO: CDVDPlayerAudio::Decode dts:8202449 pts:8202449 size:627
+08:21:41 T:1800441289    INFO: CDVDPlayerAudio::Decode dts:8228571 pts:8228571 size:627
+08:21:41 T:1800443261   DEBUG: Normal M:1871529 (A:8228571 V:0) P:0 A:6.36 V:-1.87/T:0.20 (0,0,1,1) A:18% V:0% (6.02,6.34)
+08:21:41 T:1800463556   DEBUG: Normal M:1892008 (A:8228571 V:0) P:0 A:6.34 V:-1.89/T:0.20 (0,0,1,1) A:18% V:0% (6.00,6.34)
+08:21:41 T:1800483853   DEBUG: Normal M:1912305 (A:8228571 V:0) P:0 A:6.32 V:-1.91/T:0.20 (0,0,1,1) A:18% V:0% (5.98,6.34)
+08:21:41 T:1800504151   DEBUG: Normal M:1932603 (A:8228571 V:0) P:0 A:6.30 V:-1.93/T:0.20 (0,0,1,1) A:18% V:0% (5.96,6.34)
+08:21:41 T:1800524490   DEBUG: Normal M:1952941 (A:8228571 V:0) P:0 A:6.28 V:-1.95/T:0.20 (0,0,1,1) A:18% V:0% (5.94,6.34)
+08:21:41 T:1800544973   DEBUG: Normal M:1973239 (A:8228571 V:0) P:0 A:6.26 V:-1.97/T:0.20 (0,0,1,1) A:18% V:0% (5.92,6.34)
+08:21:41 T:1800565330   DEBUG: Normal M:1993780 (A:8228571 V:0) P:0 A:6.23 V:-1.99/T:0.20 (0,0,1,1) A:18% V:0% (5.90,6.34)
+08:21:41 T:1800585671   DEBUG: Normal M:2014124 (A:8228571 V:0) P:0 A:6.21 V:-2.01/T:0.20 (0,0,1,1) A:18% V:0% (5.87,6.34)
+08:21:41 T:1800605980   DEBUG: Normal M:2034434 (A:8228571 V:0) P:0 A:6.19 V:-2.03/T:0.20 (0,0,1,1) A:18% V:0% (5.85,6.34)
+08:21:41 T:1800614828    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1800614921    INFO: CDVDPlayerAudio::Decode dts:8254694 pts:8254694 size:627
+08:21:41 T:1800615302    INFO: CDVDPlayerAudio::Decode dts:8280816 pts:8280816 size:627
+08:21:41 T:1800615631    INFO: CDVDPlayerAudio::Decode dts:8306939 pts:8306939 size:627
+08:21:41 T:1800615955    INFO: CDVDPlayerAudio::Decode dts:8333061 pts:8333061 size:627
+08:21:41 T:1800616285    INFO: CDVDPlayerAudio::Decode dts:8359184 pts:8359184 size:627
+08:21:41 T:1800616623    INFO: CDVDPlayerAudio::Decode dts:8385306 pts:8385306 size:627
+08:21:41 T:1800616978    INFO: CDVDPlayerAudio::Decode dts:8411429 pts:8411429 size:627
+08:21:41 T:1800626315   DEBUG: Normal M:2054769 (A:8411429 V:0) P:0 A:6.36 V:-2.05/T:0.20 (0,0,1,1) A:18% V:0% (6.02,6.34)
+08:21:41 T:1800646761   DEBUG: Normal M:2075044 (A:8411429 V:0) P:0 A:6.34 V:-2.08/T:0.20 (0,0,1,1) A:18% V:0% (6.00,6.34)
+08:21:41 T:1800667042   DEBUG: Normal M:2095495 (A:8411429 V:0) P:0 A:6.32 V:-2.10/T:0.20 (0,0,1,1) A:18% V:0% (5.98,6.34)
+08:21:41 T:1800687312   DEBUG: Normal M:2115765 (A:8411429 V:0) P:0 A:6.30 V:-2.12/T:0.20 (0,0,1,1) A:18% V:0% (5.96,6.34)
+08:21:41 T:1800707595   DEBUG: Normal M:2136045 (A:8411429 V:0) P:0 A:6.28 V:-2.14/T:0.20 (0,0,1,1) A:18% V:0% (5.94,6.34)
+08:21:41 T:1800727938   DEBUG: Normal M:2156389 (A:8411429 V:0) P:0 A:6.26 V:-2.16/T:0.20 (0,0,1,1) A:18% V:0% (5.92,6.34)
+08:21:41 T:1800748445   DEBUG: Normal M:2176701 (A:8411429 V:0) P:0 A:6.23 V:-2.18/T:0.20 (0,0,1,1) A:18% V:0% (5.89,6.34)
+08:21:41 T:1800768750   DEBUG: Normal M:2197213 (A:8411429 V:0) P:0 A:6.21 V:-2.20/T:0.20 (0,0,1,1) A:18% V:0% (5.87,6.34)
+08:21:41 T:1800789045   DEBUG: Normal M:2217508 (A:8411429 V:0) P:0 A:6.19 V:-2.22/T:0.20 (0,0,1,1) A:18% V:0% (5.85,6.34)
+08:21:41 T:1800799583    INFO: COMXAudio::ApplyVolume - Volume=1.00 (* 1.00 * 1.00)
+08:21:41 T:1800799749    INFO: CDVDPlayerAudio::Decode dts:8437551 pts:8437551 size:627
+08:21:41 T:1800800217    INFO: CDVDPlayerAudio::Decode dts:8463673 pts:8463673 size:627
+08:21:41 T:1800800623    INFO: CDVDPlayerAudio::Decode dts:8489796 pts:8489796 size:626
+08:21:41 T:1800801049    INFO: CDVDPlayerAudio::Decode dts:8515918 pts:8515918 size:627
+08:21:41 T:1800801451    INFO: CDVDPlayerAudio::Decode dts:8542041 pts:8542041 size:627
+08:21:41 T:1800801884    INFO: CDVDPlayerAudio::Decode dts:8568163 pts:8568163 size:627
+08:21:41 T:1800802368    INFO: CDVDPlayerAudio::Decode dts:8594286 pts:8594286 size:627
+08:21:41 T:1800809448   DEBUG: Normal M:2237906 (A:8594286 V:0) P:0 A:6.36 V:-2.24/T:0.20 (0,0,1,1) A:18% V:0% (6.02,6.34)
+08:21:41 T:1800829802   DEBUG: Normal M:2258263 (A:8594286 V:0) P:0 A:6.34 V:-2.26/T:0.20 (0,0,1,1) A:18% V:0% (6.00,6.34)
+08:21:41 T:1800840671   DEBUG: OMXClock::OMXStop
+08:21:41 T:1800846372   DEBUG: OMXThread::Run - Exited thread with  id -1400901952
+08:21:41 T:1800846880   DEBUG: OMXThread::StopThread - Thread stopped
+08:21:41 T:1800848886   DEBUG: COMXCoreComponent::DecoderEventHandler - OMX.broadcom.audio_mixer Ignoring expected event: eEvent(0x1), nData1(0x8000101c), nData2(0x0), pEventData(0x(nil))
+08:21:42 T:1800908540   DEBUG: COMXCoreComponent::Deinitialize : OMX.broadcom.audio_decode handle 0x16c26b0
+08:21:42 T:1800927367   DEBUG: COMXCoreComponent::Deinitialize : OMX.broadcom.audio_mixer handle 0xac9005b8
+08:21:42 T:1800929457   DEBUG: COMXCoreComponent::Deinitialize : OMX.broadcom.audio_render handle 0xac903440
+08:21:42 T:1800942234   DEBUG: OMXThread::Run - Exited thread with  id -1388339520
+08:21:42 T:1800942507   DEBUG: OMXThread::StopThread - Thread stopped
+08:21:42 T:1800944449   DEBUG: COMXCoreComponent::Deinitialize : OMX.broadcom.clock handle 0x16c27a0

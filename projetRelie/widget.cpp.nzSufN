@@ -1,0 +1,367 @@
+#include "widget.h"
+#include "ui_widget.h"
+#include <QDebug>
+
+using namespace std;
+
+Widget::Widget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+    this->showFullScreen();
+    this->setStyleSheet("background-color:black;");
+
+    //SetConsoleOutputCP(65001);
+
+    system("sudo chmod 777 /dev/serial0");
+
+    SerialPort widgetSerialPort("/dev/serial0", BaudRate::B_115200, NumDataBits::EIGHT, Parity::NONE, NumStopBits::ONE);
+    serialPort = widgetSerialPort;
+    serialPort.SetTimeout(-1);
+    serialPort.Open();
+
+    system("jackd -d alsa -d hw:1 &");
+
+    buzzer_start();
+
+    // Récupère la taille de l'écran
+    /*QScreen *screen = QGuiApplication::primaryScreen();
+    QRect  screenGeometry = screen->geometry();*/
+    screenHeight = 1100;
+    screenWidth = 1900;
+
+    initGammes();
+    *gammeActuelle=*gammeBlues;
+
+    /*QMediaPlaylist *playlist = new QMediaPlaylist();
+    playlist->addMedia(QUrl("qrc:/new/prefix1/images/resources/coucou.mp3"));
+    playlist->setPlaybackMode(QMediaPlaylist::Loop);
+    backgroundMusic->setMedia(QUrl("qrc:/new/prefix1/images/resources/coucou.mp3"));
+    backgroundMusic->setVolume(20);
+    backgroundMusic->setPlaylist(playlist);*/
+
+    connect(itsTimer,SIGNAL(timeout()),this,SLOT(loop()));
+    itsTimer->start(1);
+}
+
+Widget::~Widget()
+{
+    delete ui;
+}
+
+void Widget::initGammes()
+{
+    //Octave 3
+    Note mib3("mib3",	311.13, true,   3);		//63
+    Note fa3("fa3",		349.23, false,  4);             //65
+    Note solb3("solb3",	369.99, true,   5);		//66
+    Note lab3("lab3",	415.30, true,   6);		//68
+    Note la3("la3",		440.00, false,  6);		        //69
+    Note sib3("sib3",	466.16, true,   7);		//70
+    Note si3("si3",		493.88, false,  7);		        //71
+
+    //Octave 4
+    Note reb4("reb4",	554.37, true,   9);		//73
+    Note mib4("mib4",	622.25, true,   10);		//75
+    Note fa4("fa4",		698.46, false,  11);		        //77
+    Note solb4("solb4",	739.99, true,   12);		//78
+    Note lab4("lab4",	830.61, true,   13);		//80
+    Note la4("la4",		880.00, false,  13);		        //81
+    Note sib4("sib4",	932.33, true,   14);		//82
+    Note si4("si4",		987.77, false,  14);		        //82
+
+    //Octave 5
+    Note reb5("reb5",	1108.73, true,  16);		//85
+    Note mib5("mib5",	1244.51, true,  17);		//85
+    Note fa5("fa5",		1396.91, false, 18);		    //85
+
+    gammeBlues->ajouteNotes(
+            mib3,
+            solb3,
+            lab3,
+            la3,
+            sib3,
+            reb4,
+            mib4,
+            solb4,
+            lab4,
+            la4,
+            sib4,
+            reb5
+        );
+    int index=1;
+    for(Note &uneNote : gammeBlues->vecteurDeNotes)
+    {
+        uneNote.dimensionsNote = QRect((screenWidth/14)*(index+0.8),((45+3.725*(-uneNote.hauteur))*screenHeight)/144, screenWidth/21, screenHeight/5.4);
+        if(uneNote.estBemol) uneNote.path = ":/new/prefix1/images/resources/NoteBemol.png";
+        else uneNote.path = ":/new/prefix1/images/resources/Note.png";
+        index++;
+    }
+
+    gammeMineure->ajouteNotes(
+        mib3,
+        fa3,
+        solb3,
+        lab3,
+        sib3,
+        si3,
+        reb4,
+        mib4,
+        fa4,
+        solb4,
+        lab4,
+        sib4
+    );
+    index=1;
+    for(Note &uneNote : gammeMineure->vecteurDeNotes)
+    {
+        uneNote.dimensionsNote = QRect((screenWidth/14)*(index+0.8),((45+3.725*(-uneNote.hauteur))*screenHeight)/144, screenWidth/21, screenHeight/5.4);
+        if(uneNote.estBemol) uneNote.path = ":/new/prefix1/images/resources/NoteBemol.png";
+        else uneNote.path = ":/new/prefix1/images/resources/Note.png";
+        index++;
+    }
+
+    gammeJaponaise->ajouteNotes(
+        mib3,
+        fa3,
+        solb3,
+        sib3,
+        si3,
+        mib4,
+        fa4,
+        solb4,
+        sib4,
+        si4,
+        mib5,
+        fa5
+    );
+    index=1;
+    for(Note &uneNote : gammeJaponaise->vecteurDeNotes)
+    {
+        uneNote.dimensionsNote = QRect((screenWidth/14)*(index+0.8),((45+3.725*(-uneNote.hauteur))*screenHeight)/144, screenWidth/21, screenHeight/5.4);
+        if(uneNote.estBemol) uneNote.path = ":/new/prefix1/images/resources/NoteBemol.png";
+        else uneNote.path = ":/new/prefix1/images/resources/Note.png";
+        index++;
+    }
+}
+
+void Widget::mousePressEvent(QMouseEvent* event)
+{
+    if(event->button()==Qt::LeftButton)
+    {
+        if(event->x()>screenWidth/8-8 and event->x()<screenWidth/8+106 and event->y()>(screenHeight/12)*11-38 and event->y()<(screenHeight/12)*11+12)  *gammeActuelle=*gammeBlues;
+        else if(event->x()>(screenWidth/8)*3.5-8 and event->x()<(screenWidth/8)*3.5+160 and event->y()>(screenHeight/12)*11-38 and event->y()<(screenHeight/12)*11+12) *gammeActuelle=*gammeMineure;
+        else if(event->x()>(screenWidth/8)*6-8 and event->x()<(screenWidth/8)*6+187 and event->y()>(screenHeight/12)*11-38 and event->y()<(screenHeight/12)*11+12) *gammeActuelle=*gammeJaponaise;
+    }
+}
+
+void Widget::keyPressEvent(QKeyEvent *event)
+{
+    // TODO : Mettre toutes les gammes dans une liste et itérer dessus pour que ça marche peut importe le nb de gammes
+    if(event->key()==Qt::Key_Left)
+    {
+        if(gammeActuelle->nomGamme=="Blues") *gammeActuelle=*gammeJaponaise;
+        else if(gammeActuelle->nomGamme=="Japonaise") *gammeActuelle=*gammeMineure;
+        else if(gammeActuelle->nomGamme=="Mineure") *gammeActuelle=*gammeBlues;
+    }
+
+    if(event->key()==Qt::Key_Right)
+    {
+        if(gammeActuelle->nomGamme=="Blues") *gammeActuelle=*gammeMineure;
+        else if(gammeActuelle->nomGamme=="Mineure") *gammeActuelle=*gammeJaponaise;
+        else if(gammeActuelle->nomGamme=="Japonaise") *gammeActuelle=*gammeBlues;
+    }
+    /*if(event->key()==Qt::Key_Space)
+    {
+        musicOn = !musicOn;
+        if(musicOn) backgroundMusic->play();
+        else backgroundMusic->pause();
+    }*/
+    if(event->key()==Qt::Key_Up)
+    {
+        distance++;
+        if(distance==13){distance=1;}
+    }
+    if(event->key()==Qt::Key_Down)
+    {
+        distance--;
+        if(distance==0){distance=12;}
+    }
+    if(event->key()==Qt::Key_Escape)
+    {
+        QMessageBox *messageBox = new QMessageBox("IHM Thérémine",
+                                                  "Quitter ?",
+                                                  QMessageBox::Question,
+                                                  QMessageBox::Ok,
+                                                  QMessageBox::Cancel | QMessageBox::Default | QMessageBox::Escape,0);
+        int res = messageBox->exec();
+        if (res == QMessageBox::Ok){
+            this->close();
+        }
+    }
+}
+
+void Widget::displayNotesText()
+{
+    QPainter* notesLabel = new QPainter(this);
+    notesLabel->setPen(Qt::white);
+    notesLabel->setFont(QFont("Rockwell", 20));
+
+    int indexPlacementNote=2;
+    for(const Note &note : gammeActuelle->vecteurDeNotes)
+    {
+        std::string copyNote = note.nomNote;
+        copyNote.pop_back();
+        QString text = QString::fromStdString(copyNote);
+        notesLabel->drawText(QPoint((screenWidth/14)*indexPlacementNote,(screenHeight/12)*6),text);
+        indexPlacementNote++;
+    }
+    notesLabel->end();
+}
+
+void Widget::displayNotesImage()
+{
+    QPainter* notesPainter = new QPainter(this);
+    QPen pen(Qt::white, 3, Qt::SolidLine);
+
+    // Lignes Mesure
+    notesPainter->setPen(pen);
+    notesPainter->drawLine(10,(30*screenHeight)/144,screenWidth-10,(30*screenHeight)/144);
+    notesPainter->drawLine(10,(37.5*screenHeight)/144,screenWidth-10,(37.5*screenHeight)/144);
+    notesPainter->drawLine(10,(45*screenHeight)/144,screenWidth-10,(45*screenHeight)/144);
+    notesPainter->drawLine(10,(52.5*screenHeight)/144,screenWidth-10,(52.5*screenHeight)/144);
+    notesPainter->drawLine(10,(60*screenHeight)/144,screenWidth-10,(60*screenHeight)/144);
+
+    // Clé de Sol
+    QRect dimensionsCleSol((screenWidth/14)*0.35,(5*screenHeight)/30,screenWidth/14,((5*screenHeight)/9.30) - ((5*screenHeight)/24));
+    QImage imageCleSol;
+    imageCleSol.load(":/new/prefix1/images/resources/cleSol.png");
+
+    notesPainter->drawImage(dimensionsCleSol,imageCleSol);
+    noteActuelle->draw(notesPainter);
+
+    notesPainter->end();
+}
+
+void Widget::displayBoutonsGamme()
+{
+    QPainter* boutonsPainter = new QPainter(this);
+    boutonsPainter->setPen(Qt::white);
+    boutonsPainter->setFont(QFont("Rockwell", 30));
+
+    // TODO : Afficher une liste de boutons (en fonction du nombre de gamme)
+    boutonsPainter->drawText(QPoint(screenWidth/8,(screenHeight/12)*11),QString("Blues"));
+    if(gammeActuelle->nomGamme!="Blues") boutonsPainter->setPen(Qt::black);
+    boutonsPainter->drawRect(screenWidth/8-8,(screenHeight/12)*11-38,114,50);
+    boutonsPainter->setPen(Qt::white);
+
+    boutonsPainter->drawText(QPoint((screenWidth/8)*3.5,(screenHeight/12)*11),QString("Mineure"));
+    if(gammeActuelle->nomGamme!="Mineure") boutonsPainter->setPen(Qt::black);
+    boutonsPainter->drawRect((screenWidth/8)*3.5-8,(screenHeight/12)*11-38,168,50);
+    boutonsPainter->setPen(Qt::white);
+
+    boutonsPainter->drawText(QPoint((screenWidth/8)*6,(screenHeight/12)*11),QString("Japonaise"));
+    if(gammeActuelle->nomGamme!="Japonaise") boutonsPainter->setPen(Qt::black);
+    boutonsPainter->drawRect((screenWidth/8)*6-8,(screenHeight/12)*11-38,195,50);
+    boutonsPainter->setPen(Qt::white);
+
+    boutonsPainter->end();
+}
+
+void Widget::displayBoutonPlay()
+{
+    QPainter* boutonPainter = new QPainter(this);
+
+    QRect dimensionsBoutonPlay(screenWidth/2.25,(screenHeight/12)*7,screenWidth/15,screenWidth/15);
+    QImage imageBoutonPlay;
+    if(this->musicOn) imageBoutonPlay.load(":/new/prefix1/images/resources/pause.png");
+    else imageBoutonPlay.load(":/new/prefix1/images/resources/play.png");
+    boutonPainter->drawImage(dimensionsBoutonPlay,imageBoutonPlay);
+
+    boutonPainter->end();
+}
+
+void Widget::paintEvent(QPaintEvent *event)
+{
+    Q_UNUSED(event);
+    //displayBoutonPlay();
+    displayBoutonsGamme();
+    displayNotesText();
+    displayNotesImage();
+}
+
+bool valeurHorsLimite(double uneValeur)
+{
+    return (uneValeur < DISTANCE_MIN or uneValeur > DISTANCE_MAX);
+}
+
+bool Widget::deuxValeurSurTroisHorsLimite()
+{
+    bool deuxValeurSurTroisHorsLimite = false;
+
+    if(valeurHorsLimite(valeur_precedente) && valeurHorsLimite(valeur_future))
+    {
+        deuxValeurSurTroisHorsLimite = true;
+    }
+    else if(valeurHorsLimite(valeur_precedente) && valeurHorsLimite(valeur_actuelle))
+    {
+        deuxValeurSurTroisHorsLimite = true;
+    }
+    else if(valeurHorsLimite(valeur_actuelle) && valeurHorsLimite(valeur_future))
+    {
+        deuxValeurSurTroisHorsLimite = true;
+    }
+    return deuxValeurSurTroisHorsLimite;
+}
+
+void Widget::loop()
+{
+    int loopCount = 0;
+    qDebug() << "am in loop\n";
+    while(distanceFound == false and loopCount < 20)
+    {
+        loopCount++;
+        serialPort.Read(lidarData);
+        qDebug() << lidarData[0];
+        if(lidarData[0] == 0x59)
+        {
+            serialPort.Read(lidarData);
+            if(lidarData[0] == 0x59)
+            {
+                serialPort.Read(distance_L);
+                serialPort.Read(distance_H);
+                distance = (distance_H[0]*256 + distance_L[0])/100.0;
+                distanceFound = true;
+            }
+        }
+    }
+    if(!valeurHorsLimite(distance))
+    {
+        if(valeur_actuelle <= valeur_future + 1.0 && valeur_actuelle >= valeur_precedente - 1.0)
+        {
+            double distanceTotal=DISTANCE_MAX - DISTANCE_MIN;
+            if(int((valeur_actuelle-1)*1000) / int(distanceTotal/12*1000) <= 12)
+            {
+                *noteActuelle=gammeActuelle->trouveNoteSelonDistance(distance);
+                buzzer_set_freq(noteActuelle->frequenceNote);
+                msleep(100);
+            }
+
+        }
+    }
+    else
+    {
+        if(deuxValeurSurTroisHorsLimite())
+        {
+            buzzer_set_freq(0);
+            *noteActuelle = *noteParDefault;
+        }
+    }
+    valeur_precedente = valeur_actuelle;
+    valeur_actuelle = valeur_future;
+    valeur_future = distance;
+    distanceFound = false;
+    // Appel la fonction paintEvent
+    repaint();
+}
