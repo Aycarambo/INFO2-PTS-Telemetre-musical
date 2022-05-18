@@ -5,4 +5,6 @@ This project was realised during my studies at [La Rochelle université](https:/
 
 Because this repo was poorly made, the actual README and all the interesting stuff are inside the [Doc.pdf](projetRelie/Doc.pdf) file.
 
+Further project informations can also be found in this [report](projetRelie/Rapport/rapport.md)
+
 
